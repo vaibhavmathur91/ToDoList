@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+</head>
+<body>
+    <div>
+        <a href="add/">Add Me</a>
+    </div>
+    <div>
+    <div>
+        {% for mytask in object_list %}
+            <div style="display:flex">
+                <span>
+                    <li>
+                        <a href="{% url 'task-update' mytask.id %}">{{ mytask.name }}</a>
+                    </li>
+                </span> 
+                <span style="padding:0px 10px">
+                    <a href="{% url 'task-delete' mytask.id %}">Delete</a>
+                </span>
+                {% if mytask.completed %}   
+                    <span style="padding:0px 10px">
+                        Completed
+                    </span>
+                {% endif %} 
+            </div>
+        {% endfor %}
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<form action="" method="post" >
+{% csrf_token %}
+<!-- {% include 'myapp/form-template.html'%} -->
+{{ form }}
+<div><button type="submit">Submit</button></div>
+</form>
+
+</body>
+</html>
