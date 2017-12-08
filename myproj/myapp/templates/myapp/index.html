@@ -2,10 +2,36 @@
 <html>
 <head>
 <title>Home Page</title>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.delete{
+    background-color: #f44336;
+    padding: 5px 5px;
+}
+.taskfont{
+    color: fuchsia;
+    text-decoration: none;
+    font-size: 30px;
+}
+.complete{
+font-size: 30px;
+}
+</style>
 </head>
 <body>
     <div>
-        <a href="add/">Add Me</a>
+        <a class="button" href="add/">Add Me</a>
     </div>
     <div>
     <div>
@@ -13,14 +39,14 @@
             <div style="display:flex">
                 <span>
                     <li>
-                        <a href="{% url 'task-update' mytask.id %}">{{ mytask.name }}</a>
+                        <a class="taskfont" href="{% url 'task-update' mytask.id %}">{{ mytask.name }}</a>
                     </li>
                 </span> 
                 <span style="padding:0px 10px">
-                    <a href="{% url 'task-delete' mytask.id %}">Delete</a>
+                    <a class="button delete" href="{% url 'task-delete' mytask.id %}">Delete</a>
                 </span>
                 {% if mytask.completed %}   
-                    <span style="padding:0px 10px">
+                    <span class="complete" style="padding:0px 10px">
                         Completed
                     </span>
                 {% endif %} 
