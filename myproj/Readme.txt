@@ -4,7 +4,7 @@ Application Tested With --  (powershell - windows10)
 
 Note: Enable Script exicution in powershell  (Set-ExecutionPolicy RemoteSigned)
 
-A)  CREATE APPLICATION
+A)  Steps Taken while creating APPLICATION
 -----------------------------------------------------------------------------------------------
 1. Create new folder dolist
 2. go to dolist path
@@ -19,7 +19,6 @@ A)  CREATE APPLICATION
 9. notepad.py myproj/setting.py
       -- add myapp in INSTALLED_APPS = [...]
 10. python manage.py migrate
-
 -----------------------------------------------------------------------------------------------
 
 
@@ -33,14 +32,12 @@ B)  Run APPLICATION
 5. Download Django              --->   pip install django
 6. Go to myproj folder          --->   cd myproj
 6. Run Django Application       --->   python manage.py runserver 0.0.0.0:9000
-
 -----------------------------------------------------------------------------------------------
 
 
 
 C) USE CASE
 -----------------------------------------------------------------------------------------------
-
 url : http://127.0.0.1:9000/task/
    
 1. ADD NEW TASK
@@ -57,6 +54,5 @@ url : http://127.0.0.1:9000/task/
                     ---  completion status of task
 3) Delete Task
    url  :
-            a) Click delete button to delete task 
-            
+            a) Click delete button to delete task          
 -----------------------------------------------------------------------------------------------
