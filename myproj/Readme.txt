@@ -31,7 +31,7 @@ B)  Run APPLICATION
 4. Activate virtual environment --->   .\myvenv\Scripts\activate     
 5. Download Django              --->   pip install django
 6. Go to myproj folder          --->   cd myproj
-6. Run Django Application       --->   python manage.py runserver 0.0.0.0:9000
+7. Run Django Application       --->   python manage.py runserver 0.0.0.0:9000
 -----------------------------------------------------------------------------------------------
 
 
