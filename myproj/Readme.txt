@@ -23,7 +23,22 @@ A)  CREATE APPLICATION
 -----------------------------------------------------------------------------------------------
 
 
-B) USE CASE
+
+B)  Run APPLICATION
+-----------------------------------------------------------------------------------------------
+1. Download Github project 
+2. Create ToDoList Folder and Download gitproject here
+3. Create Virtual environment   --->   python -m venv myvenv         
+4. Activate virtual environment --->   .\myvenv\Scripts\activate     
+5. Download Django              --->   pip install django
+6. Go to myproj folder          --->   cd myproj
+6. Run Django Application       --->   python manage.py runserver 0.0.0.0:9000
+
+-----------------------------------------------------------------------------------------------
+
+
+
+C) USE CASE
 -----------------------------------------------------------------------------------------------
 
 url : http://127.0.0.1:9000/task/
@@ -43,3 +58,5 @@ url : http://127.0.0.1:9000/task/
 3) Delete Task
    url  :
             a) Click delete button to delete task 
+            
+-----------------------------------------------------------------------------------------------
